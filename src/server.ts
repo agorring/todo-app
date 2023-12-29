@@ -1,6 +1,7 @@
 import express, {Request, Response } from 'express'
 import connectToDatabase from './db'
 import userRoutes from './routes/user.routes'
+import categoryRoutes from './routes/category.routes'
 
 const application = express()
 
@@ -15,6 +16,7 @@ application.get("/ping", (request:Request,response:Response)=>{
 }) 
 
 application.use("/user", userRoutes)
+application.use("/category", categoryRoutes)
 
 application.listen(PORT, ()=> {
     console.log("Server up and running.")
