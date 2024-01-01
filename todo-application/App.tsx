@@ -1,7 +1,9 @@
 import Navigation from "@/navigation";
-import theme, { Text } from "@/utils/themes";
+import useUserGlobalStore from "@/store/useUserGlobalStore";
+import theme from "@/utils/themes";
 import { ThemeProvider } from "@shopify/restyle";
 import { StatusBar } from "expo-status-bar";
+import { useEffect } from "react";
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function App() {
