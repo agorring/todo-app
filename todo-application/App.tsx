@@ -1,26 +1,16 @@
-import Button from "@/components/button";
+import Navigation from "@/navigation";
 import theme, { Text } from "@/utils/themes";
 import { ThemeProvider } from "@shopify/restyle";
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View } from "react-native";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
-      <View style={styles.container}>
-        <Text variant="textXl">This is a test</Text>
-        <Button></Button>
-        <StatusBar style="auto" />
-      </View>
+      <SafeAreaProvider>
+        <Navigation />
+        <StatusBar translucent />
+      </SafeAreaProvider>
     </ThemeProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
