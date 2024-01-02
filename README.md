@@ -2,7 +2,7 @@ A full-stack Todo list app created using React Native.
 
 ## Acknowledgements
 
-This project is built upon the foundation provided in the Todo List tutorial by omkhetwal via YouTube. I want to express my gratitude for the tutorial.
+This project is built upon the Todo List tutorial by omkhetwal via YouTube. I want to express my gratitude for the tutorial.
 
 ### Original Tutorial
 
